@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'Georgia';
+    src: url('..//css/fonts/Georgia.ttf');
+    src: url('..//css/fonts/Georgia.eot') format('embedded-opentype'),
+         url('..//css/fonts/Georgia.woff') format('woff'),
+         url('..//css/fonts/Georgia.ttf') format('truetype'),
+         url('..//css/fonts/Georgia.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Georgia-bold';
+    src: url('..//css/fonts/Georgia-bold.ttf');
+    src: url('..//css/fonts/Georgia-bold.eot') format('embedded-opentype'),
+         url('..//css/fonts/Georgia-bold.woff') format('woff'),
+         url('..//css/fonts/Georgia-bold.ttf') format('truetype'),
+         url('..//css/fonts/Georgia-bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Georgia-Italic';
+    src: url('..//css/fonts/Georgia-Italic.ttf');
+    src: url('..//css/fonts/Georgia-Italic.eot?#iefix') format('embedded-opentype'),
+         url('..//css/fonts/Georgia-Italic.woff') format('woff'),
+         url('..//css/fonts/Georgia-Italic.ttf') format('truetype'),
+         url('..//css/fonts/Georgia-Italic.svg# Georgia-Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'GeorgiaRegular';
+    src: url('..//css/fonts/GeorgiaRegular.ttf');
+    src: url('..//css/fonts/GeorgiaRegular.eot') format('embedded-opentype'),
+         url('..//css/fonts/GeorgiaRegular.ttf') format('truetype'),
+         url('..//css/fonts/GeorgiaRegular.svg GeorgiaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Herold-Regular';
+	src: url('fonts/Herold-Regular.eot');
+	src: local('☺'), url('fonts/Herold-Regular.woff') format('woff'), url('fonts/Herold-Regular.ttf') format('truetype'), url('fonts/Herold-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family:'palai';
+    src: url('..//css/fonts/palai.ttf');
+    src: url('..//css/fonts/palai.eot') format('embedded-opentype'),
+         url('..//css/fonts/palai.woff') format('woff'),
+         url('..//css/fonts/palai.ttf') format('truetype'),
+         url('..//css/fonts/palai.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*font-face*/
+ @font-face {
+      font-family: "Helv-2-ULight";
+      src: url('..//css/fonts/Helv-2-ULight.pfm');
+    }
+
+ @font-face {
+      font-family: "Helv-2-ULight-Italic";
+      src: url('..//css/fonts/Helv-2-ULight-Italic.pfm');
+    }
+
+
+ @font-face {
+      font-family: "Helv-3-Thin";
+      src: url('..//css/fonts/Helv-3-Thin.pfm');
+    }
+
+
+ @font-face {
+      font-family: "Helv-3-Thin-Italic";
+      src: url('..//css/fonts/Helv-3-Thin-Italic.pfm');
+    }
+
+
+ @font-face {
+      font-family: "Helv-4-Light";
+      src: url('..//css/fonts/Helv-4-Light.pfm');
+    }
+
+
+ @font-face {
+      font-family: "Helv-4-Light-Italic";
+      src: url('..//css/fonts/Helv-4-Light-Italic.pfm');
+    }
+
+
+ @font-face {
+      font-family: "Helv-4-Light-Italic";
+      src: url('..//css/fonts/Helv-4-Light-Italic.pfm');
+    }
+
+
+ @font-face {
+      font-family: "Helv-5-Normal";
+      src: url('..//css/fonts/Helv-5-Normal.pfm');
+    }
+
+
+ @font-face {
+      font-family: "Helv-5-Normal-Italic";
+      src: url('..//css/fonts/Helv-5-Normal-Italic.pfm');
+    }
+
+
+
+ @font-face {
+      font-family: "Helv-6-Medium";
+      src: url('..//css/fonts/Helv-6-Medium.pfm');
+    }
+
+
+ @font-face {
+      font-family: "Helv-6-Medium-Italic";
+      src: url('..//css/fonts/Helv-6-Medium-Italic.pfm');
+    }
+
+
+ @font-face {
+      font-family: "Helv-7-Bold-Italic";
+      src: url('..//css/fonts/Helv-7-Bold-Italic.pfm');
+    }
+
+
+
+ @font-face {
+      font-family: "Helv-8-Heavy";
+      src: url('..//css/fonts/Helv-8-Heavy.pfm');
+    }
+
+
+ @font-face {
+      font-family: "Helv-7-Bold";
+      src: url('..//css/fonts/Helv-7-Bold.pfm');
+    }
+
+
+ @font-face {
+      font-family: "Helv-8-Heavy-Italic";
+      src: url('..//css/fonts/Helv-8-Heavy-Italic.pfm');
+    }
+
+ @font-face {
+      font-family: "Helv-9-Black";
+      src: url('..//css/fonts/Helv-9-Black.pfm');
+    }
+
+ @font-face {
+      font-family: "Helv-9-Black-Italic";
+      src: url('..//css/fonts/Helv-9-Black-Italic.pfm');
+    }
+
+
+ @font-face {
+      font-family: "HelveticaNeueCyr-Black";
+      src: url('..//css/fonts/HelveticaNeueCyr-Black.otf');
+    }
+
+
+ @font-face {
+      font-family: "HelveticaNeueCyr-BlackItalic";
+      src: url('..//css/fonts/HelveticaNeueCyr-BlackItalic.otf');
+    }
+
+ @font-face {
+      font-family: "HelveticaNeueCyr-Bold";
+      src: url('..//css/fonts/HelveticaNeueCyr-Bold.pfm');
+    }
+
+
+ @font-face {
+      font-family: "HelveticaNeueCyr-BoldItalic";
+      src: url('..//css/fonts/HelveticaNeueCyr-BoldItalic.otf');
+    }
+
+
+ @font-face {
+      font-family: "HelveticaNeueCyr-Heavy";
+      src: url('..//css/fonts/HelveticaNeueCyr-Heavy.otf');
+    }
+
+ @font-face {
+      font-family: "Helv-2-ULight";
+      src: url('..//css/fonts/HelveticaNeueCyr-HeavyItalic.otf');
+    }
+
+
+ @font-face {
+      font-family: "HelveticaNeueCyr-Italic";
+      src: url('..//css/fonts/HelveticaNeueCyr-Italic.otf');
+    }
+
+ @font-face {
+      font-family: "HelveticaNeueCyr-Light";
+      src: url('..//css/fonts/HelveticaNeueCyr-Light.otf');
+    }
+
+ @font-face {
+      font-family: "HelveticaNeueCyr-LightItalic";
+      src: url('..//css/fonts/HelveticaNeueCyr-LightItalic.otf');
+    }
+
+ @font-face {
+      font-family: "HelveticaNeueCyr-Medium";
+      src: url('..//css/fonts/HelveticaNeueCyr-Medium.otf');
+    }
+
+ @font-face {
+      font-family: "HelveticaNeueCyr-MediumItaicl";
+      src: url('..//css/fonts/HelveticaNeueCyr-MediumItaicl.otf');
+    }
+
+ @font-face {
+      font-family: "HelveticaNeueCyr-Roman";
+      src: url('..//css/fonts/HelveticaNeueCyr-Roman.otf');
+    }
+
+ @font-face {
+      font-family: "HelveticaNeueCyr-Thin";
+      src: url('..//css/fonts/HelveticaNeueCyr-Thin.otf');
+    }
+
+ @font-face {
+      font-family: "HelveticaNeueCyr-ThinItalic";
+      src: url('..//css/fonts/HelveticaNeueCyr-ThinItalic.otf');
+    }
+
+ @font-face {
+      font-family: "HelveticaNeueCyr-UltraLight";
+      src: url('..//css/fonts/HelveticaNeueCyr-UltraLight.otf');
+    }
+
+ @font-face {
+      font-family: "HelveticaNeueCyr-UltraLightItalic";
+      src: url('..//css/fonts/HelveticaNeueCyr-UltraLightItalic.otf');
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
