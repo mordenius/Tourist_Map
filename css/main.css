@@ -383,7 +383,8 @@ padding-top: 20px;
 
 
 .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > p {
-    margin: 32.5px auto 0;
+    margin: 83.5px auto 0;
+    padding-top: 146px;
     width: 330px;
     /* font-family: GeorgiaRegular; */
     font-size: 18px;
