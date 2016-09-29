@@ -342,7 +342,7 @@ $(function() {
                     opacity: 0
                 }, 400, function() {
                     $('.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > h1').text(value.point.object_name);
-                    $(".right_b_img").attr("val",value.point.icon_url);
+                    $(".right_b_img").attr("src",value.point.icon_url);
                     //$(".slide_frame").attr("url",value.point.foto_slider.url);
                     //$(".slides").attr("src", value.point.photo_url);
                     //$('.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > p').text(value.point.vilage_name);
