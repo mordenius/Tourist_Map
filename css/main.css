@@ -113,15 +113,15 @@ body {
 .Up_sector > h1 {
   margin: 0 auto;
   padding: 0 0 0 0;
-  font-family: "Helv-5-Normal";
+  font-family:'HelveticaNeueCyr-Roman';
   width: 350px;
   text-align: left;
   font-size: 40px;
   color: #333333;
   margin-left: 120px;
-  font-size: 28px;
+  font-size: 22px;
   width: 232px;
-  padding-top: 40px;
+  padding-top: 44px;
   padding-left: 36px;
 }
 
@@ -161,37 +161,48 @@ body {
 
 
 .btn {
-    width:  205px;
+    width: 206px;
     height: 55px;
-    background: #000;
     position: absolute;
-    top: 120px;
-    font-size: 14.55px;
-    color: #333333;
-    line-height: 3.4;
+    line-height: 3.9;
     color: white;
+    font-family:'HelveticaNeueCyr-Medium';
+    font-size: 14.20px;
 }
 
 .tourist_oject {
     position: relative;
-    top: 5px;
+    top: 4px;
     background: #32b2e2;
-    font-size: 17px;
+    line-height: 1.7;
 }
 
 .infrastructure {
-   /* position: relative; */
-   top: 5px;
+   top: 4px;
    left: 210px;
    background: #32b2e2;
-   font-size: 17px;
 }
 
 .btn_active{
-  background: #ffffff;
-  color: black;
+   background: #ffffff;
+   color: black;
 }
  
+
+.tourist_oject > h1 {
+    margin: 0px auto;
+    padding: 0 0 0 0;
+    font-size: 14.58px;
+    padding-top: 5px;
+}
+
+.infrastructure > h1 {
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    font-size: 14.58px;
+}
+
+
 
 .buttons {
     position: absolute;
@@ -211,24 +222,34 @@ body {
 .Middle_Sector > ul > li {
     margin: 0 auto;
     list-style: none;
-    font-size: 13px;
-    /* font-family: Georgia-bold; */
+    font-size: 14.58px;
+    font-family:'HelveticaNeueCyr-Light';
     width: inherit;
     height: 60px;
     color: #333333;
 }
 
+
 .Middle_Sector > ul > li > h1 {
    font-size: 20px;
    text-align: left;
    margin: 0px auto;
-   margin-left: 105px;
+   margin-left: 122px;
    margin-top: 0;
    padding-top: 20px;
 }
     
 
-
+.Middle_Sector > ul > li > img{
+    
+width: 40px;
+    
+height: 30px;
+    
+float: left;
+    
+margin: 15px 0 0 0;
+}
 
 .grupe_slide_contol > .slider_right_arov {
     margin: 0 auto;
@@ -265,7 +286,7 @@ position: relative;
     
 top: 40px;
     
-left: -15px;
+left: -6px;
 }
 
 
@@ -336,7 +357,7 @@ left: -15px;
     letter-spacing: 2px;
     line-height: 1.2;
     padding-left: 169px;
-    width: 208px;
+    width: 235px;
     font-size: 25px;
     float: right;
     text-align: right;

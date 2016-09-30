@@ -325,7 +325,7 @@ $(function() {
           
                 $(".points").append("<div class='point' id=" +  value.point.id + ">" + Teg_El + "</div>");
                 
-                $(".swiper-wrapper").append("<li class='swiper-slide' id=" + value.point.id + "> <p class='Str_Nam'>" + list_nambers + "</p> <h1> "+ value.point.object_name+"  </h1>   </li>");
+                $(".swiper-wrapper").append("<li class='swiper-slide' id=" + value.point.id + "> <p class='Str_Nam'>" + list_nambers + "</p> <img src="+value.point.icon_url+">  <h1> "+ value.point.object_name+"  </h1>   </li>");
                 
                 
             });
@@ -338,7 +338,7 @@ $(function() {
     function change_info_r_block() {
         $.each(Point_Mass, function(key, value) {
             if (value.point.id == $('.active_point').attr("id")) {
-                $('.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_1 > h1,.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_1 > p, .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > block_1 > h1,.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > block_1 > h1, .decription_text_img, .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .slider > .slide_frame, a.prev_slider,.next_slide').stop().animate({
+                $('.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_1 > h1,.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_1 > p, .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > block_1 > h1,.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > block_1 > h1, .decription_text_img, .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .slider > .slide_frame, a.prev_slider,.next_slide, .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame  > .block_1 > .right_b_img').stop().animate({
                     opacity: 0
                 }, 400, function() {
                     $('.block_1 > h1').text(value.point.object_name);
@@ -348,7 +348,7 @@ $(function() {
                     //$(".slides").attr("src", value.point.photo_url);
                     //$('.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > p').text(value.point.vilage_name);
             
-                    $('.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_1 > h1,.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_1 > p, .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_1 > h1, .decription_text_img,.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .slider >  .slide_frame, a.prev_slider,.next_slide').stop().animate({
+                    $('.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_1 > h1,.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_1 > p, .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_1 > h1, .decription_text_img,.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .slider >  .slide_frame, a.prev_slider,.next_slide,.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame  > .block_1 > .right_b_img').stop().animate({
                         opacity: 1
                     }, 400)
                 });
@@ -819,7 +819,23 @@ left_info_block.swipe_funck(); //--swipe_funck
 left_info_block.point_selection(); //--point_selection
 left_info_block.Enable_Disable.click_function();
 
+//--------------------------------------------------------------------------------
 
+    
+    
+    $(".btn").click(function() {
+        
+         $(".btn").removeClass("btn_active");
+         $(this).addClass("btn_active");
+        
+        
+    });
+    
+ 
+    
+    
+    
+    
 
 
 });
