@@ -265,6 +265,12 @@ margin: 15px 0 0 0;
     background-position: 50% 50%;
 }
 
+.grupe_slide_contol {
+   /* display: none;*/
+}
+
+
+
 .grupe_slide_contol > .slider_left_arov {
     margin: 0 auto;
     width:  40px;
@@ -447,8 +453,7 @@ left: -6px;
 
 
 .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_1 >  p {
-    margin: 83.5px auto 0;
-    padding-top: 146px;
+    margin: 149.5px auto 0;
     width: 363px;
     font-family:'HelveticaNeueCyr-Thin';
     font-size: 16.5px;
@@ -456,7 +461,9 @@ left: -6px;
     text-align: left;
     word-spacing: 7px;
     line-height: 1.6;
-    padding-left: 0px;
+    padding-left: 15px;
+    position: relative;
+    top: 50px;
 }
 
 .Right_Info_Block_ON_OF {
@@ -504,68 +511,68 @@ left: -6px;
 
  #gost_chaika {
     /* background: url(..//img/Point_Active.png); */
-    top: 1578.5px;
-    left: 2094.5px;
+    top: 1522.5px;
+    left: 1836.5px;
     z-index: 3;
 }
 
  #gost_2_cap {
     /* background: url(..//img/Point_Active.png); */
-    top: 1593.5px;
-    left: 1900.5px;
+    top: 663.5px;
+    left: 2438.5px;
     z-index: 5;
 }
 
  #gost_berezka {
     /* background-image: url(..//img/Shoe_Icon.svg); */
-    top: 1428px;
-    left: 2162.5px;
+    top: 2096px;
+    left: 2201.5px;
     z-index: 6;
 }
 
  #g_savma {
     /* background-image: url(..//img/Shoe_Icon.svg); */
-    top: 1467px;
-    left: 2077px;
+    top: 2823px;
+    left: 2130px;
     z-index: 7;
 }
 
  #c_calina {
     /* background-image: url(..//img/Shoe_Icon.svg); */
-    top: 1201.5px;
-    left: 2350px;
+    top: 1476.5px;
+    left: 1593px;
     z-index: 8;
 }
 
  #c_stariy_gorod {
     /* background-image: url(..//img/Shoe_Icon.svg); */
-    top: 1523.5px;
-    left: 2153.5px;
-    z-index: 8;
+    top: 1440.5px;
+    left: 1834.5px;
+    z-index: 2;
 }
 
-#c_shemchushina { 
-   top: 1542px;
-   left: 2052px;
+#c_shemchushina {
+   top: 2228px;
+   left: 2156px;
    z-index: 2;
 }
 
 /**/
-#mag_nix { 
-   top: 1542px;
-   left: 2052px;
+#mag_nix {
+   top: 1441px;
+   left: 1652px;
+   z-index: 8;
+}
+
+#mag_capriz {
+   top: 1276px;
+   left: 1730px;
    z-index: 2;
 }
 
-#mag_capriz { 
-   top: 1542px;
-   left: 2052px;
-   z-index: 2;
-}
-
-#ob_mag_obuf { 
-   top: 1542px;
-   left: 2052px;
+#ob_mag_obuf {
+   top: 1245px;
+   left: 1919px;
    z-index: 2;
 }
 
@@ -582,10 +589,16 @@ left: -6px;
 }
 
 #gostin_dwor {
-   top: 1561px;
-   left: 1704px;
+   top: 1548px;
+   left: 1644px;
    z-index: 3;
 }
+
+#gostin_dwor > div > div > img {
+    width: 181px;
+    height: 75px;
+}
+
 
 #memor_topoleva {
    top: 2500px;
@@ -658,7 +671,7 @@ left: -6px;
 /*test_elem*/
 
 .Pointer {
-    width: 30px;
+    width: 35px;
     height: 130px;
     position: relative;
     z-index: 4;
@@ -666,6 +679,7 @@ left: -6px;
     margin-top: 452.5px;
     margin-left: -30px;
     background: url(..//img/Arrow_Left.png);
+    background-position: 90% 50%;
 }
 
 .scale {width: 600px;height: 92.5px;/* background: #fefced; *//* border: 4px solid rgb(0, 0, 0); */position: absolute;z-index: 1000;top: 956px;left: 655px;border-bottom: none;}
