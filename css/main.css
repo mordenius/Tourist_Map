@@ -266,7 +266,10 @@ margin: 15px 0 0 0;
 }
 
 .grupe_slide_contol {
-   /* display: none;*/
+   position: absolute;
+   left: 160px;
+   top: 775px;
+   z-index: 100;
 }
 
 
