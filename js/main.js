@@ -338,17 +338,17 @@ $(function() {
     function change_info_r_block() {
         $.each(Point_Mass, function(key, value) {
             if (value.point.id == $('.active_point').attr("id")) {
-                $('.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > h1,.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > p, .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > h1,.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > h1, .decription_text_img, .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .slider >  .slide_frame, a.prev_slider,.next_slide').stop().animate({
+                $('.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_1 > h1,.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_1 > p, .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > block_1 > h1,.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > block_1 > h1, .decription_text_img, .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .slider > .slide_frame, a.prev_slider,.next_slide').stop().animate({
                     opacity: 0
                 }, 400, function() {
-                    $('.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > h1').text(value.point.object_name);
-                    $(".right_b_img").attr("src",value.point.icon_url);
-                    $('.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > p').text(value.point.description);
+                    $('.block_1 > h1').text(value.point.object_name);
+                    $(".block_1 > .right_b_img").attr("src",value.point.icon_url);
+                    $('.block_1 >  p').text(value.point.description);
                     //$(".slide_frame").attr("url",value.point.foto_slider.url);
                     //$(".slides").attr("src", value.point.photo_url);
                     //$('.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > p').text(value.point.vilage_name);
             
-                    $('.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > h1,.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > p, .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > h1, .decription_text_img,.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .slider >  .slide_frame, a.prev_slider,.next_slide').stop().animate({
+                    $('.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_1 > h1,.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_1 > p, .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_1 > h1, .decription_text_img,.Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .slider >  .slide_frame, a.prev_slider,.next_slide').stop().animate({
                         opacity: 1
                     }, 400)
                 });
