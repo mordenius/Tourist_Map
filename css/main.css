@@ -256,7 +256,7 @@ margin: 15px 0 0 0;
     width:  40px;
     height: 40px;
     position: relative;
-    top: 90px;
+    top: 140px;
     left: -155px;
     border: 3px solid #32b2e2;
     border-radius: 20%;
@@ -267,7 +267,7 @@ margin: 15px 0 0 0;
 
 .grupe_slide_contol {
    position: absolute;
-   left: 160px;
+   left: 190px;
    top: 775px;
    z-index: 100;
 }
@@ -279,7 +279,7 @@ margin: 15px 0 0 0;
     width:  40px;
     height: 40px;
     position: relative;
-    top: -6px;
+    top: 91px;
     left: 140px;
     border: 3px solid #32b2e2;
     border-radius: 20%;
@@ -289,13 +289,10 @@ margin: 15px 0 0 0;
 }
 
 
-.grupe_slide_contol > p {
-    
-position: relative;
-    
-top: 40px;
-    
-left: -6px;
+.grupe_slide_contol > div {
+  position: relative;
+  top: 55px;
+  left: -6px;
 }
 
 
@@ -357,7 +354,6 @@ left: -6px;
 
 .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame  > .block_1 > h1 {
     margin: 0 auto 0 0px;
-    padding: 0 48px 0;
     font-family:'HelveticaNeueCyr-Roman';
     font-size: 50px;
     color: #333333;
@@ -365,7 +361,7 @@ left: -6px;
     word-spacing: 12px;
     letter-spacing: 2px;
     line-height: 1.2;
-    padding-left: 169px;
+    padding-left: 129px;
     width: 235px;
     font-size: 25px;
     float: right;
@@ -392,7 +388,7 @@ left: -6px;
 .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame  > .block_1 > .right_b_img {
     float: right;
     margin-right: 20px;
-    width: 120px;
+    width: 90px;
     height: 149px;
     position: absolute;
     top: 27px;
@@ -466,6 +462,7 @@ left: -6px;
     line-height: 1.6;
     padding-left: 15px;
     position: relative;
+    height: 515px;
     top: 50px;
 }
 
