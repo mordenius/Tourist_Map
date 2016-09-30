@@ -294,7 +294,7 @@ padding-top: 20px;
 
 .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > h1 {
     margin: 0 auto 0 0px;
-    padding: 22px 0px 0;
+    padding: 19px 15px 0;
     font-family: Conv_Herold-Regular;
     font-size: 50px;
     color: #333333;
@@ -304,8 +304,9 @@ padding-top: 20px;
     line-height: 1.2;
     padding-left: 40px;
     width: 276px;
-    font-size: 32px;
+    font-size: 25px;
     float: right;
+    text-align: right;
 }
 
 .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > h2 {
