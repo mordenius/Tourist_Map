@@ -61,6 +61,7 @@ $(function() {
             }
         }
     }, {
+
         "point": {
             "id": "g_savma",
             "type": "active",
@@ -219,6 +220,7 @@ $(function() {
             }
         }
     }, {
+
         "point": {
             "id": "spaso_preob_sobor",
             "type": "active",
@@ -424,7 +426,6 @@ $(function() {
             }
         }
 
-
     }];
     // -- data_point_end    
 
@@ -450,6 +451,7 @@ $(function() {
         $.each(Point_Mass, function(key, value) {
             if (value.point.id == $('.active_point').attr("id")) {
                 car_point = key;
+
                 $('.block_1 > h1,.block_1 > .right_b_img, .block_1 >  p,.block_2 > h1, .block_2 > .right_b_img,.block_2 >  p, .block_2 >  h3, .block_2 >  h4, .block_2 >  h5, .block_2 >  h6 ').stop().animate({
                     opacity: 0
                 }, 400, function() {
@@ -510,6 +512,7 @@ $(function() {
 						  $('.block_2  >  h6').append("Часы работы:    <br>" +  value.point.time_worck );
 					}
                     $('.block_1 > h1,.block_1 > .right_b_img, .block_1 >  p,.block_2 > h1, .block_2 > .right_b_img,.block_2 >  p, .block_2 >  h3, .block_2 >  h4, .block_2 >  h5, .block_2 >  h6').stop().animate({
+
                         opacity: 1
                     }, 400)
                 });
@@ -520,7 +523,7 @@ $(function() {
     //--- returne_settings_position
 
     var returne_settings_position = function() {
-        //$(".box, .map").width(2512);
+
         $.each(Point_Mass, function(key, value) {
             $('.point').each(function(i, elem) {
                 if (value.point.id == $(elem).attr("id")) {
@@ -531,12 +534,14 @@ $(function() {
                         "top": value.point.position.top
                     });
                 } else {
+
                 }
             });
         });
         $('.box').css({
             "left": -1200
         });
+
     };
 
 
@@ -559,7 +564,7 @@ $(function() {
                 Max_Trac_Map + 80;
                 //    $('.box').animate({ "left": m }, 400);
                 if (m_plas > Max_Trac_Map) {
-                    //    $('.box').animate({ "left": -Max_Trac_Map }, 400);
+
                 } else {
                     //$('.box').animate({  "left": m }, 400);
                 }
@@ -570,11 +575,13 @@ $(function() {
                 m = m - (m * 2);
                 if (m_plas > Max_Trac_Map) {
 
+
                     //--- $('.box').animate({ "left": -Max_Trac_Map}, 400);
 
                 } else {
 
                     //--- $('.box').animate({ "left": m }, 400);
+
 
                 }
             }
@@ -583,19 +590,23 @@ $(function() {
 
 
     var Corect_Height = function() {
+
         //      h = $(".box").height();
         //      h = h / 2.8;
         //      h = -h;
         //      $('.box').css({
         //      'top': h
         //      });
+
     }
 
 
 
 
     $('.map').click(function() {
+
         //returne_settings_position();
+
     });
 
 
@@ -620,8 +631,9 @@ $(function() {
             "width": width
         });
 
+        
         //--------Objects
-
+        
         let pos = $('#gost_chaika').position();
         $('#gost_chaika').css("left", (pos.left * 1.102)).css("top", (pos.top * 1.108));
         let pos1 = $('#gost_2_cap').position();
@@ -659,12 +671,16 @@ $(function() {
         let pos18 = $('#dom_ribgina').position();
         $('#dom_ribgina').css("left", (pos18.left * 1.102)).css("top", (pos18.top * 1.108));
 
-
-
-
+        
+       
+        
+        
+        
+        
+        
+        
         //----OBjects
 
-        //  Corect_Height();
     }
     //--function_width_in_end        
 
@@ -683,6 +699,7 @@ $(function() {
         $('.box').css({
             "width": width
         });
+
 
         //---------objects
 
@@ -723,7 +740,9 @@ $(function() {
         let pos18 = $('#dom_ribgina').position();
         $('#dom_ribgina').css("left", (pos18.left / 1.102)).css("top", (pos18.top / 1.108));
 
+
         //-------objects
+
 
         Map_Left = $('.box').css('left');
         $('.box').css({
@@ -733,15 +752,18 @@ $(function() {
 
 
 
+
         Box_Vidth = $(".box").width();
         Box_Vidth = (Box_Vidth * 30) / 100;
         Box_Vidth = Box_Vidth - (Box_Vidth * 2);
+
 
         //  $('.box').animate({
         //        "left": Box_Vidth
         //  }, 400);
 
         // Corect_Height();
+
 
     }
 
@@ -766,7 +788,9 @@ $(function() {
     // --- open_id_info
 
 
+
     $(".point").click(function() {
+
         //returne_settings_position();
         $(".point").removeClass('active_point');
         $(this).addClass('active_point');
@@ -784,13 +808,16 @@ $(function() {
                 top: this_top
             }, 300)
         });
+
         Point_Id = $(this).attr("id");
         $('.swiper-slide').removeClass('activet');
         Ul_Point = ".swiper-wrapper > #" + Point_Id;
         $(Ul_Point).addClass('activet');
         corection_position();
         Corect_Height();
+
     });
+
 
 
 
@@ -896,6 +923,7 @@ $(function() {
 
     //--Right_Info_Block    
     var right_info_block = {
+
         Enable_Disable: {
             Of_ON: "false",
             click_function: click_function = function() {
@@ -920,12 +948,14 @@ $(function() {
                 });
                 disable_point();
             } //--animation_of_end
+
     }
     right_info_block.Enable_Disable.click_function();
 
 
     //-- Left_Info_Block   
     var left_info_block = {
+
         Enable_Disable: {
             Of_ON: "true",
             click_function: click_function = function() {
@@ -977,6 +1007,7 @@ $(function() {
                 });
             });
         }, //--point_selection_end          
+
     }
     left_info_block.swipe_funck(); //--swipe_funck
     left_info_block.point_selection(); //--point_selection
@@ -1020,6 +1051,7 @@ $(function() {
         slider(action);
 
     });
+
 
 
 
