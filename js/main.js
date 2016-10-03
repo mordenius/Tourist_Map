@@ -428,7 +428,7 @@ $(function() {
 
     }];
     // -- data_point_end    
-
+    var nam_l = 0;
     // -- create_point_dom
     function create_point_dom() {
         var list_nambers = 0;
@@ -437,7 +437,18 @@ $(function() {
                 var Teg_El = "<div><div class='active'> <img src=" + value.point.icon_url + "> </div><div class='container2'> </div></div>";
                 list_nambers++;
                 $(".points").append("<div class='point' id=" + value.point.id + ">" + Teg_El + "</div>");
-                $(".swiper-wrapper").append("<li class='swiper-slide' id=" + value.point.id + "> <p class='Str_Nam'>" + list_nambers + "</p> <img src=" + value.point.icon_url + ">  <h1> " + value.point.object_name + "  </h1>   </li>");
+            if(value.point.object_type == "infrastructure"){  
+                
+            $(".Middle_Sector > .swiper-wrapper").append("<li class='swiper-slide' cat_type="+value.point.object_type+" id=" + value.point.id + "> <p class='Str_Nam'>" + list_nambers + "</p> <img src=" + value.point.icon_url + ">  <h1> " + value.point.object_name + "  </h1>   </li>");
+                
+            }
+            if(value.point.object_type == "tourist_facilities"){
+            nam_l++;
+            $(".Middle_Sector2 > .swiper-wrapper").append("<li class='swiper-slide' cat_type="+value.point.object_type+" id=" + value.point.id + "> <p class='Str_Nam'>" + nam_l + "</p> <img src=" + value.point.icon_url + ">  <h1> " + value.point.object_name + "  </h1>   </li>");
+                
+            
+            }
+                
             });
         };
         Point_Alignment();
@@ -562,11 +573,13 @@ $(function() {
                 m = m + 100; //-- учитываем размер иконки
                 m = m - (m * 2);
                 Max_Trac_Map + 80;
-                //    $('.box').animate({ "left": m }, 400);
+                
+                   // $('.box').animate({ "left": m - 400 }, 400);
                 if (m_plas > Max_Trac_Map) {
 
                 } else {
-                    //$('.box').animate({  "left": m }, 400);
+                    
+                   // $('.box').animate({  "left": m  - 400 }, 400);
                 }
             } else if (map_pos_left < Max_Trac_Map_Midle) {
                 m = $('.active_point').offset().left;
@@ -574,9 +587,8 @@ $(function() {
                 m = m / 2;
                 m = m - (m * 2);
                 if (m_plas > Max_Trac_Map) {
-
-
-                    //--- $('.box').animate({ "left": -Max_Trac_Map}, 400);
+                    
+                  //   $('.box').animate({ "left": -Max_Trac_Map}, 400);
 
                 } else {
 
@@ -689,7 +701,7 @@ $(function() {
     function width_out() {
         width_in_v = false;
         var width = $('.map').width();
-        if (width < 1800) {
+        if (width < 2590) {
             return;
         }
         width = width / 1.1;
@@ -790,7 +802,6 @@ $(function() {
 
 
     $(".point").click(function() {
-
         //returne_settings_position();
         $(".point").removeClass('active_point');
         $(this).addClass('active_point');
@@ -815,6 +826,22 @@ $(function() {
         $(Ul_Point).addClass('activet');
         corection_position();
         Corect_Height();
+		
+		
+	 ative_point_of_list = "";
+	 ative_point_of_list = $(".activet").attr("cat_type");
+	 if(ative_point_of_list == "tourist_facilities"){
+		 $("#mid_2").css({"display" : "block"});
+		 $("#mid_1").css({"display" : "none"});
+		 $(".btn").removeClass("btn_active"); 
+         $(".tourist_oject").addClass("btn_active");
+	 }
+	 if(ative_point_of_list == "infrastructure"){
+		 $("#mid_1").css({"display" : "block"});
+		 $("#mid_2").css({"display" : "none"});
+		 $(".btn").removeClass("btn_active"); 
+         $(".infrastructure").addClass("btn_active");
+	 }
 
     });
 
@@ -987,7 +1014,7 @@ $(function() {
         }, //--animation_of_end
         swipe_funck: swipe_fucktion = function() {
             setTimeout(function() {
-                swiper = new Swiper('.swiper-container', {
+                swiper = new Swiper('.Middle_Sector, .Middle_Sector2', {
                     pagination: '.swiper-pagination',
                     slidesPerView: 5,
                     paginationClickable: true,
@@ -1019,6 +1046,18 @@ $(function() {
     $(".btn").click(function() {
         $(".btn").removeClass("btn_active");
         $(this).addClass("btn_active");
+        
+    elem = $(this).attr("id");  
+    console.log(elem, "elem");
+    if(elem == "tourist_oject"){
+        $(".Middle_Sector2").css({"display"   :  "none"});  
+        $(".Middle_Sector").css({"display"    :  "block"});
+      
+    }
+    if(elem == "infrastructure") {
+        $(".Middle_Sector").css({"display"    :  "none"});
+        $(".Middle_Sector2").css({"display"   :  "block"});   
+    }   
     });
 	
     //-------------------------------------------------------------------------------- 
@@ -1053,6 +1092,14 @@ $(function() {
     });
 
 
+ //-------swiper loader
+    var swiper_loader = function(){
+        setTimeout(function() {
+            $(".Middle_Sector2").css({"display" : "none" }); 
+        }, 1000);    
+    }
+    swiper_loader();
+    
 
 
 

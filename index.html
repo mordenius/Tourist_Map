@@ -51,18 +51,27 @@
                     </div>
                     <!----------------Left_Block----------------->   
                         <div class="Left_Info_Block_1_Frame">
-                        <div class="buttons">   
-                            <div class="btn tourist_oject btn_active"> <h1>  ТУРИСТИЧЕСКИЕ  <br> ОБЪЕКТЫ  </h1></div>
-                            <div class="btn infrastructure">           <h1>  ИНФРАСТРУКТУРА              </h1></div>    
+                      <div class="buttons">   
+                            <div class="btn tourist_oject btn_active" id="tourist_oject">  <h1>  ТУРИСТИЧЕСКИЕ  <br> ОБЪЕКТЫ  </h1></div>
+                            <div class="btn infrastructure" id="infrastructure">           <h1>  ИНФРАСТРУКТУРА               </h1></div>    
                         </div>
                          <div class="Left_Info_Block_2_Frame">
                             <div class="Up_sector"> <h1>  ТУРИСТИЧЕСКАЯ ИНФРАСТРУКТУРА ГОРОДА КИМРЫ 2016 Г.  </h1> </div>
-                            <div class="Middle_Sector swiper-container">
-                              <a class="Left_Info_Block_ON_OF"> </a> <!--Переключатель левого блока-->
-                                <ul class="swiper-wrapper">
-                                </ul>
-                                   <div class="swiper-pagination"></div>
-                                 </div>
+                           <div id="mid_1" class="Middle_Sector swiper-container">
+                                    <div class="swiper_line"> <div class="scroller">  </div></div>
+                               <a class="Left_Info_Block_ON_OF"> </a> <!--Переключатель левого блока-->
+                               <ul class="swiper-wrapper">
+                               </ul>
+                               <div class="swiper-pagination"></div>
+                               </div>
+                              
+                            <div id="mid_2" class="Middle_Sector2 swiper-container">
+                                <div class="swiper_line"> <div class="scroller">  </div></div>
+                               <a class="Left_Info_Block_ON_OF"> </a> <!--Переключатель левого блока-->
+                               <ul class="swiper-wrapper">
+                               </ul>
+                               <div class="swiper-pagination"></div>
+                            </div>
                             <div class="Bottom_Sector"></div>
                         </div>
                             
@@ -77,4 +86,5 @@
 <script src="js/swiper.min.js"></script>
 <script src="js/hammer.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/scroller.js"></script> 
 </html>
