@@ -72,7 +72,7 @@ body {
     z-index: 1000;
     background: #fefced;
     top: -1016.5px;
-    margin-right: -424.4px;
+    margin-right: -460.4px;
 }
 
 .Right_Info_Block_2_Frame {
@@ -267,7 +267,7 @@ margin: 15px 0 0 0;
 
 .grupe_slide_contol {
    position: absolute;
-   left: 190px;
+   left: 170px;
    top: 775px;
    z-index: 100;
 }
@@ -292,7 +292,7 @@ margin: 15px 0 0 0;
 .grupe_slide_contol > div {
   position: relative;
   top: 102px;
-  left: -6px;
+  left: -10px;
 }
 
 
@@ -582,11 +582,11 @@ margin: 15px 0 0 0;
     float: left;
     text-decoration: none;
     height: 130px;
-    width: 30px;
+    width: 44px;
     background: url(..//img/Arrow_Left.png);
-    margin-top: 443.50px;
+    margin-top: 300px;
     background-repeat: no-repeat;
-    margin-left: -5.5px;
+    margin-left: -45.5px;
 }
 
 .Box_Map {
