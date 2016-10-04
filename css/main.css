@@ -1015,7 +1015,7 @@ svg {
 }
 
 .activet {
-    background-color: #ffffff;
+    background-color: #32b2e2;
 }
 
 .Main_Menu {
@@ -1030,3 +1030,23 @@ svg {
     z-index: 100;
 }
 
+/*scroll bar*/
+
+.swiper_line {
+    width: 10px;
+    height: 360px;
+    background: #dfdfdf;
+    position: absolute;
+    top: 269px;
+    left: 0px;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.scroller {
+  width: 10px;
+  height: 80px;
+  background: #32b2e2;
+  position: relative;
+  pointer-events: none;
+}

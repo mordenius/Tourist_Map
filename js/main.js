@@ -799,7 +799,7 @@ $(function() {
     });
     // --- open_id_info
 
-
+var point_namber;
 
     $(".point").click(function() {
         //returne_settings_position();
@@ -820,12 +820,12 @@ $(function() {
             }, 300)
         });
 
-        Point_Id = $(this).attr("id");
-        $('.swiper-slide').removeClass('activet');
-        Ul_Point = ".swiper-wrapper > #" + Point_Id;
-        $(Ul_Point).addClass('activet');
-        corection_position();
-        Corect_Height();
+     Point_Id = $(this).attr("id");
+     $('.swiper-slide').removeClass('activet');
+     Ul_Point = ".swiper-wrapper > #" + Point_Id;
+     $(Ul_Point).addClass('activet');
+     corection_position();
+     Corect_Height();
 		
 		
 	 ative_point_of_list = "";
@@ -835,6 +835,7 @@ $(function() {
 		 $("#mid_1").css({"display" : "none"});
 		 $(".btn").removeClass("btn_active"); 
          $(".tourist_oject").addClass("btn_active");
+         
 	 }
 	 if(ative_point_of_list == "infrastructure"){
 		 $("#mid_1").css({"display" : "block"});
@@ -842,7 +843,19 @@ $(function() {
 		 $(".btn").removeClass("btn_active"); 
          $(".infrastructure").addClass("btn_active");
 	 }
-
+     //------------------------------------------------    
+point_namber = $(".activet").children("p").text();
+point_namber = parseInt(point_namber);
+    
+if(point_namber > 5 && ative_point_of_list == "tourist_facilities"){   
+  $(".Left_Info_Block_2_Frame > div > ul").css('-webkit-transform',"translate3d(0px,  " + -216 + "px, 0px)");  
+}else if (point_namber > 5 && ative_point_of_list == "infrastructure") {
+  $(".Left_Info_Block_2_Frame > div > ul").css('-webkit-transform',"translate3d(0px,  " + -360 + "px, 0px)");    
+}else{
+  $(".Left_Info_Block_2_Frame > div > ul").css('-webkit-transform',"translate3d(0px,  " + 0 + "px, 0px)");   
+  
+}
+       $(".scroller").css({"top" : 28 * point_namber })
     });
 
 
