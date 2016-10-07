@@ -497,6 +497,7 @@ $(function() {
     var car_point;
     //--chenge_information_right_info_clok
     function change_info_r_block() {
+        this_slide = 1;
         $.each(Point_Mass, function(key, value) {
             if (value.point.id == $('.active_point').attr("id")) {
                 car_point = key;
