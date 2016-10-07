@@ -252,12 +252,12 @@ margin: 15px 0 0 0;
 }
 
 .grupe_slide_contol > .slider_right_arov {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     width:  40px;
     height: 40px;
     position: relative;
     top: 140px;
-    left: -155px;
+    left: -130px;
     border: 3px solid #32b2e2;
     border-radius: 20%;
     background: url(..//img/slider_arov_lefrt.png);
@@ -275,7 +275,6 @@ margin: 15px 0 0 0;
 
 
 .grupe_slide_contol > .slider_left_arov {
-    margin: 0 auto;
     width:  40px;
     height: 40px;
     position: relative;
@@ -291,9 +290,10 @@ margin: 15px 0 0 0;
 
 .grupe_slide_contol > div {
   position: relative;
-  top: 102px;
-  left: -10px;
+  top: 105px;
+  left: -25px;
 }
+
 
 
 .Middle_Sector > ul > .Even {
