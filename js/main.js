@@ -606,12 +606,12 @@ var corection_position = function() {
 
 
 var Corect_Height = function() {
-    //    h = $(".box").height();
-      //  h = h / 5.5;
-    //    h = -h;
-       // $('.box').css({
-      //   'top': h
-    //    });
+         h = $(".box").height();
+         h = h / 5.5;
+         h = -h;
+         $('.box').css({
+         'top': h
+        });
 }
 
 
