@@ -571,6 +571,7 @@ $(function() {
 
     //--- returne_settings_position
 var returne_settings_position = function() {
+      $(".box, .map").width(3135);
     $.each(Point_Mass, function(key, value) {
         $('.point').each(function(i, elem) {
             $(this).children("div").children("div").children("img").attr("src",   $(this).children("div").children("div").children("img").attr("standart_icon"));
@@ -605,12 +606,12 @@ var corection_position = function() {
 
 
 var Corect_Height = function() {
-        h = $(".box").height();
-        h = h / 5.5;
-        h = -h;
-        $('.box').css({
-         'top': h
-        });
+    //    h = $(".box").height();
+      //  h = h / 5.5;
+    //    h = -h;
+       // $('.box').css({
+      //   'top': h
+    //    });
 }
 
 
