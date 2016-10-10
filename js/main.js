@@ -527,7 +527,7 @@ $(function() {
                           $('.block_1  >  h1').append(value.point.right_infoblock_header);
                           $(".block_1  > .right_b_img").attr("src", value.point.icon_url);
                           $('.block_1  >  p').text(value.point.description[1]);
-						  $('.control_slide_info').text("Страница" + this_slide + "из" + val_slide);
+						  $('.control_slide_info').text("Страница " + this_slide + "из " + val_slide);
                     }else if(value.point.object_type == "infrastructure" && value.point.institution == "hotel" ){
 						  $(".block_1").css({ "display" : "none"});                  //--ref names mast be varieblase
 						  $(".block_2").css({ "display" : "block"});
