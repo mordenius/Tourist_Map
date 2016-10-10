@@ -888,8 +888,8 @@ margin: 15px 0 0 0;
     float: left;
     margin-top: 452.5px;
     margin-left: -30px;
-    background: url(..//img/Arrow_Left.png);
-    background-position: 90% 50%;
+    background: url(..//img/Arrow_Left_Pointer.png);
+    background-position: 75% 50%;
 }
 
 .scale {width: 600px;height: 92.5px;/* background: #fefced; *//* border: 4px solid rgb(0, 0, 0); */position: absolute;z-index: 1000;top: 956px;left: 655px;border-bottom: none;}
