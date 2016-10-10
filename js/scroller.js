@@ -26,7 +26,7 @@ $(".Left_Info_Block_2_Frame > div").on("touchstart", function(e) {
 });
 
 
-$(".Left_Info_Block_2_Frame > div").on("touchmove", function(e) {//--------------передвижение ползунка
+$(".Left_Info_Block_2_Frame > div:not(.Up_sector, .Bottom_Sector)").on("touchmove", function(e) {//--------------передвижение ползунка
      event.preventDefault();
      event.stopPropagation();
      Touch_Moove =  event.targetTouches[0].pageY;   
