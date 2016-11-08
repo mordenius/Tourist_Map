@@ -1,6 +1,7 @@
 $(function() {
     // -- data_point 
       // -- data_point 
+    var multitouch = true;
     var Point_Mass = [{
         "point": {
             "id": "gost_chaika",
@@ -465,6 +466,41 @@ $(function() {
 
     }];
     // -- data_point_end    
+    // -- data_point_end   
+$(window).on("touchstart", function(e) { 
+    //--- event.preventDefault();
+    //--- event.stopPropagation();
+    if(event.targetTouches.length == 2){
+       multitouch = true; 
+    }else{
+       multitouch = false;     
+    }
+    //--console.log(multitouch, "multitouch"); 
+    //--console.log(event.targetTouches.length, "event.targetTouches.length");
+});
+    
+$(window).on("touchmove", function(e) { 
+    //--- event.preventDefault();
+    //--- event.stopPropagation();
+    if(event.targetTouches.length == 2){
+       multitouch = true; 
+    }else{
+       multitouch = false;     
+    }
+    //--console.log(multitouch, "multitouch"); 
+    //--console.log(event.targetTouches.length, "event.targetTouches.length")
+    
+    if(multitouch==false){  
+    }
+    
+}); 
+
+
+
+
+
+
+
     var nam_l = 0;
     // -- create_point_dom
     function create_point_dom() {
@@ -633,7 +669,7 @@ $('.map').click(function() {
     function width_in() {
         width_in_v = true;
         var width = $('.map').width();
-        width = width * 1.1;
+        width = width * 1.01;
         if (width > 6000) {
             return;
         }
@@ -648,41 +684,41 @@ $('.map').click(function() {
         //--------Objects
         
         let pos = $('#gost_chaika').position();
-        $('#gost_chaika').css("left", (pos.left * 1.102)).css("top", (pos.top * 1.108));
+        $('#gost_chaika').css("left", (pos.left * 1.0102)).css("top", (pos.top * 1.0108));
         let pos1 = $('#gost_2_cap').position();
-        $('#gost_2_cap').css("left", (pos1.left * 1.102)).css("top", (pos1.top * 1.108));
+        $('#gost_2_cap').css("left", (pos1.left * 1.0102)).css("top", (pos1.top * 1.0108));
         let pos3 = $('#gost_berezka').position();
-        $('#gost_berezka').css("left", (pos3.left * 1.102)).css("top", (pos3.top * 1.108));
+        $('#gost_berezka').css("left", (pos3.left * 1.0102)).css("top", (pos3.top * 1.0108));
         let pos4 = $('#g_savma').position();
-        $('#g_savma').css("left", (pos4.left * 1.102)).css("top", (pos4.top * 1.108));
+        $('#g_savma').css("left", (pos4.left * 1.0102)).css("top", (pos4.top * 1.0108));
         let pos5 = $('#c_calina').position();
-        $('#c_calina').css("left", (pos5.left * 1.102)).css("top", (pos5.top * 1.108));
+        $('#c_calina').css("left", (pos5.left * 1.0102)).css("top", (pos5.top * 1.0108));
         let pos6 = $('#c_stariy_gorod').position();
-        $('#c_stariy_gorod').css("left", (pos6.left * 1.102)).css("top", (pos6.top * 1.108));
+        $('#c_stariy_gorod').css("left", (pos6.left * 1.0102)).css("top", (pos6.top * 1.0108));
         let pos7 = $('#c_shemchushina').position();
-        $('#c_shemchushina').css("left", (pos7.left * 1.102)).css("top", (pos7.top * 1.108));
+        $('#c_shemchushina').css("left", (pos7.left * 1.0102)).css("top", (pos7.top * 1.0108));
         let pos8 = $('#mag_nix').position();
-        $('#mag_nix').css("left", (pos8.left * 1.102)).css("top", (pos8.top * 1.108));
+        $('#mag_nix').css("left", (pos8.left * 1.0102)).css("top", (pos8.top * 1.0108));
         let pos9 = $('#mag_capriz').position();
-        $('#mag_capriz').css("left", (pos9.left * 1.102)).css("top", (pos9.top * 1.108));
+        $('#mag_capriz').css("left", (pos9.left * 1.0102)).css("top", (pos9.top * 1.0108));
         let pos10 = $('#ob_mag_obuf').position();
-        $('#ob_mag_obuf').css("left", (pos10.left * 1.102)).css("top", (pos10.top * 1.108));
+        $('#ob_mag_obuf').css("left", (pos10.left * 1.0102)).css("top", (pos10.top * 1.0108));
         let pos11 = $('#vozn_cercov').position();
-        $('#vozn_cercov').css("left", (pos11.left * 1.102)).css("top", (pos11.top * 1.108));
+        $('#vozn_cercov').css("left", (pos11.left * 1.0102)).css("top", (pos11.top * 1.0108));
         let pos12 = $('#spaso_preob_sobor').position();
-        $('#spaso_preob_sobor').css("left", (pos12.left * 1.102)).css("top", (pos12.top * 1.108));
+        $('#spaso_preob_sobor').css("left", (pos12.left * 1.0102)).css("top", (pos12.top * 1.0108));
         let pos13 = $('#gostin_dwor').position();
-        $('#gostin_dwor').css("left", (pos13.left * 1.102)).css("top", (pos13.top * 1.108));
+        $('#gostin_dwor').css("left", (pos13.left * 1.0102)).css("top", (pos13.top * 1.0108));
         let pos14 = $('#memor_topoleva').position();
-        $('#memor_topoleva').css("left", (pos14.left * 1.102)).css("top", (pos14.top * 1.108));
+        $('#memor_topoleva').css("left", (pos14.left * 1.0102)).css("top", (pos14.top * 1.0108));
         let pos15 = $('#dom_shadneckogo').position();
-        $('#dom_shadneckogo').css("left", (pos15.left * 1.102)).css("top", (pos15.top * 1.108));
+        $('#dom_shadneckogo').css("left", (pos15.left * 1.0102)).css("top", (pos15.top * 1.0108));
         let pos16 = $('#dom_serepevih').position();
-        $('#dom_serepevih').css("left", (pos16.left * 1.102)).css("top", (pos16.top * 1.108));
+        $('#dom_serepevih').css("left", (pos16.left * 1.0102)).css("top", (pos16.top * 1.0108));
         let pos17 = $('#dom_bratiev_luginih').position();
-        $('#dom_bratiev_luginih').css("left", (pos17.left * 1.102)).css("top", (pos17.top * 1.108));
+        $('#dom_bratiev_luginih').css("left", (pos17.left * 1.0102)).css("top", (pos17.top * 1.0108));
         let pos18 = $('#dom_ribgina').position();
-        $('#dom_ribgina').css("left", (pos18.left * 1.102)).css("top", (pos18.top * 1.108));
+        $('#dom_ribgina').css("left", (pos18.left * 1.0102)).css("top", (pos18.top * 1.0108));
 
         
        
@@ -705,7 +741,7 @@ $('.map').click(function() {
         if (width < 2590) {
             return;
         }
-        width = width / 1.1;
+        width = width / 1.01;
         $('.map').css({
             "width": width
         });
@@ -717,41 +753,41 @@ $('.map').click(function() {
         //---------objects
 
         let pos = $('#gost_chaika').position();
-        $('#gost_chaika').css("left", (pos.left / 1.102)).css("top", (pos.top / 1.108));
+        $('#gost_chaika').css("left", (pos.left / 1.0102)).css("top", (pos.top / 1.0108));
         let pos1 = $('#gost_2_cap').position();
-        $('#gost_2_cap').css("left", (pos1.left / 1.102)).css("top", (pos1.top / 1.108));
+        $('#gost_2_cap').css("left", (pos1.left / 1.0102)).css("top", (pos1.top / 1.0108));
         let pos3 = $('#gost_berezka').position();
-        $('#gost_berezka').css("left", (pos3.left / 1.102)).css("top", (pos3.top / 1.108));
+        $('#gost_berezka').css("left", (pos3.left / 1.0102)).css("top", (pos3.top / 1.0108));
         let pos4 = $('#g_savma').position();
-        $('#g_savma').css("left", (pos4.left / 1.102)).css("top", (pos4.top / 1.108));
+        $('#g_savma').css("left", (pos4.left / 1.0102)).css("top", (pos4.top / 1.0108));
         let pos5 = $('#c_calina').position();
-        $('#c_calina').css("left", (pos5.left / 1.102)).css("top", (pos5.top / 1.108));
+        $('#c_calina').css("left", (pos5.left / 1.0102)).css("top", (pos5.top / 1.0108));
         let pos6 = $('#c_stariy_gorod').position();
-        $('#c_stariy_gorod').css("left", (pos6.left / 1.102)).css("top", (pos6.top / 1.108));
+        $('#c_stariy_gorod').css("left", (pos6.left / 1.0102)).css("top", (pos6.top / 1.0108));
         let pos7 = $('#c_shemchushina').position();
-        $('#c_shemchushina').css("left", (pos7.left / 1.102)).css("top", (pos7.top / 1.108));
+        $('#c_shemchushina').css("left", (pos7.left / 1.0102)).css("top", (pos7.top / 1.0108));
         let pos8 = $('#mag_nix').position();
-        $('#mag_nix').css("left", (pos8.left / 1.102)).css("top", (pos8.top / 1.108));
+        $('#mag_nix').css("left", (pos8.left / 1.0102)).css("top", (pos8.top / 1.0108));
         let pos9 = $('#mag_capriz').position();
-        $('#mag_capriz').css("left", (pos9.left / 1.102)).css("top", (pos9.top / 1.108));
+        $('#mag_capriz').css("left", (pos9.left / 1.0102)).css("top", (pos9.top / 1.0108));
         let pos10 = $('#ob_mag_obuf').position();
-        $('#ob_mag_obuf').css("left", (pos10.left / 1.102)).css("top", (pos10.top / 1.108));
+        $('#ob_mag_obuf').css("left", (pos10.left / 1.0102)).css("top", (pos10.top / 1.0108));
         let pos11 = $('#vozn_cercov').position();
-        $('#vozn_cercov').css("left", (pos11.left / 1.102)).css("top", (pos11.top / 1.108));
+        $('#vozn_cercov').css("left", (pos11.left / 1.0102)).css("top", (pos11.top / 1.0108));
         let pos12 = $('#spaso_preob_sobor').position();
-        $('#spaso_preob_sobor').css("left", (pos12.left / 1.102)).css("top", (pos12.top / 1.108));
+        $('#spaso_preob_sobor').css("left", (pos12.left / 1.0102)).css("top", (pos12.top / 1.0108));
         let pos13 = $('#gostin_dwor').position();
-        $('#gostin_dwor').css("left", (pos13.left / 1.102)).css("top", (pos13.top / 1.108));
+        $('#gostin_dwor').css("left", (pos13.left / 1.0102)).css("top", (pos13.top / 1.0108));
         let pos14 = $('#memor_topoleva').position();
-        $('#memor_topoleva').css("left", (pos14.left / 1.102)).css("top", (pos14.top / 1.108));
+        $('#memor_topoleva').css("left", (pos14.left / 1.0102)).css("top", (pos14.top / 1.0108));
         let pos15 = $('#dom_shadneckogo').position();
-        $('#dom_shadneckogo').css("left", (pos15.left / 1.102)).css("top", (pos15.top / 1.108));
+        $('#dom_shadneckogo').css("left", (pos15.left / 1.0102)).css("top", (pos15.top / 1.0108));
         let pos16 = $('#dom_serepevih').position();
-        $('#dom_serepevih').css("left", (pos16.left / 1.102)).css("top", (pos16.top / 1.108));
+        $('#dom_serepevih').css("left", (pos16.left / 1.0102)).css("top", (pos16.top / 1.0108));
         let pos17 = $('#dom_bratiev_luginih').position();
-        $('#dom_bratiev_luginih').css("left", (pos17.left / 1.102)).css("top", (pos17.top / 1.108));
+        $('#dom_bratiev_luginih').css("left", (pos17.left / 1.0102)).css("top", (pos17.top / 1.0108));
         let pos18 = $('#dom_ribgina').position();
-        $('#dom_ribgina').css("left", (pos18.left / 1.102)).css("top", (pos18.top / 1.108));
+        $('#dom_ribgina').css("left", (pos18.left / 1.0102)).css("top", (pos18.top / 1.0108));
 
 
         //-------objects
@@ -789,11 +825,11 @@ $('.map').click(function() {
     mc.add([pinch]);
     mc.on("pinchin", function(ev) {
         ev.preventDefault();
-        width_in();
+         width_out();
     });
     mc.on("pinchout", function(ev) {
         ev.preventDefault();
-        width_out();
+        width_in();
     });
     mc.on("panmove", function(ev) {
 
@@ -891,42 +927,50 @@ if(point_namber > 5 && ative_point_of_list == "tourist_facilities"){
 
     var map = {
         scroll_map: scroll_funck = function() {
-            var initialPoint;
-            var finalPoint;
-            var nowPoint;
-            var drag = false;
-            $(".box").on('touchstart', function(e) {
-                initialPoint = event.changedTouches[0];
-                drag = true;
-            }).on('touchend', function() {
-                finalPoint = event.changedTouches[0];
-                $(this).data({
-                    startX: 0,
-                    startY: 0,
+        var initialPoint;
+        var finalPoint;
+        var nowPoint;
+        var drag = false;
+        $(".box").on('touchstart', function(e) {
+          if(multitouch == false){
+             initialPoint = event.changedTouches[0];
+             drag = true; 
+          }
+            
+        }).on('touchend', function() {
+          if(multitouch == false){
+             finalPoint = event.changedTouches[0];
+             $(this).data({
+                startX: 0,
+                startY: 0,
+             });
+             drag = false;
+           }
+        }).on('touchmove', function(e) {
+            if(multitouch == false){
+            nowPoint = event.changedTouches[0];
+            //  console.log(nowPoint.screenX, nowPoint.screenY);
+            e.preventDefault();
+            if (drag) {
+                var left = parseInt($(this).css('left')) || 0,
+                    top = parseInt($(this).css('top')) || 0,
+                    newLeft = left + (nowPoint.screenX - ($(this).data().startX || nowPoint.screenX)),
+                    newTop = top + (nowPoint.screenY - ($(this).data().startY || nowPoint.screenY)),
+                    parentHeight = $(this).parent().height(),
+                    parentWidth = $(this).parent().width(),
+                    imgHeight = $(this).height(),
+                    imgWidth = $(this).width();
+                $(this).css({
+                    left: newLeft < 0 && (Math.abs(newLeft - parentWidth) < imgWidth) ? newLeft : left,
+                    top: newTop < 0 && (Math.abs(newTop - parentHeight) < imgHeight) ? newTop : top
+                }).data({
+                    startX: nowPoint.screenX,
+                    startY: nowPoint.screenY,
                 });
-                drag = false;
-            }).on('touchmove', function(e) {
-                nowPoint = event.changedTouches[0];
-                //  console.log(nowPoint.screenX, nowPoint.screenY);
-                e.preventDefault();
-                if (drag) {
-                    var left = parseInt($(this).css('left')) || 0,
-                        top = parseInt($(this).css('top')) || 0,
-                        newLeft = left + (nowPoint.screenX - ($(this).data().startX || nowPoint.screenX)),
-                        newTop = top + (nowPoint.screenY - ($(this).data().startY || nowPoint.screenY)),
-                        parentHeight = $(this).parent().height(),
-                        parentWidth = $(this).parent().width(),
-                        imgHeight = $(this).height(),
-                        imgWidth = $(this).width();
-                    $(this).css({
-                        left: newLeft < 0 && (Math.abs(newLeft - parentWidth) < imgWidth) ? newLeft : left,
-                        top: newTop < 0 && (Math.abs(newTop - parentHeight) < imgHeight) ? newTop : top
-                    }).data({
-                        startX: nowPoint.screenX,
-                        startY: nowPoint.screenY,
-                    });
-                };
-            });
+            };
+        }
+            
+        });
         },
         start_map_position: start_map_position_funck = function() {
             $(".box").css({
