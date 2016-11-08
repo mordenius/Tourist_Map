@@ -55,24 +55,23 @@ body {
 }
 
 .Fourth_Frame {
-    margin: 14px auto;
+    margin: 133px auto;
     width: 1860px;
-    height: 1020px;
+    height: 900px;
     overflow: hidden;
-    /* border: 1px solid rgb(45, 45, 42); */
     background-color: #f3f3f3;
 }
 
 .Right_Info_Block_1_Frame {
     width: 420px;
-    height: 1021px;
+    height: 1022px;
+    left: -29px;
     float: right;
-    /* border-left: 4px solid rgb(0, 0, 0); */
     position: relative;
     z-index: 1000;
     background: #fefced;
-    top: -1016.5px;
-    margin-right: -460.4px;
+    top: -1158px;
+    margin-right: -845px;
 }
 
 .Right_Info_Block_2_Frame {
@@ -84,12 +83,12 @@ body {
 
 .Left_Info_Block_1_Frame {
     width: 420px;
-    height: 1034px;
+    height: 1022px;
+    left: 27px;
     float: left;
-    /* border-right: 4px solid rgb(0, 0, 0); */
     position: relative;
     z-index: 1000;
-    top: -1020px;
+    top: -1158px;
     background: #f3f3f3;
 }
 
@@ -646,33 +645,33 @@ margin: 15px 0 0 0;
 }
 
 .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_2 >  h5 {
-	margin: -160.5px auto 0;
-	width: 363px;
-	font-family:'HelveticaNeueCyr-Thin';
-	font-size: 16.5px;
-	color: #333333;
-	text-align: left;
-	word-spacing: 7px;
-	line-height: 1.6;
-	padding-left: 15px;
-	position: relative;
-	height: 50px;
-	top: 462px;
+    margin: -160.5px auto 0;
+    width: 363px;
+    font-family:'HelveticaNeueCyr-Thin';
+    font-size: 16.5px;
+    color: #333333;
+    text-align: left;
+    word-spacing: 7px;
+    line-height: 1.6;
+    padding-left: 15px;
+    position: relative;
+    height: 50px;
+    top: 462px;
 }
 
 .Right_Info_Block_1_Frame > .Right_Info_Block_2_Frame > .block_2 >  h6 {
-	margin: -160.5px auto 0;
-	width: 363px;
-	font-family:'HelveticaNeueCyr-Thin';
-	font-size: 16.5px;
-	color: #333333;
-	text-align: left;
-	word-spacing: 7px;
-	line-height: 1.6;
-	padding-left: 15px;
-	position: relative;
-	height: 50px;
-	top: 696px;
+    margin: -160.5px auto 0;
+    width: 363px;
+    font-family:'HelveticaNeueCyr-Thin';
+    font-size: 16.5px;
+    color: #333333;
+    text-align: left;
+    word-spacing: 7px;
+    line-height: 1.6;
+    padding-left: 15px;
+    position: relative;
+    height: 50px;
+    top: 696px;
 }
 
 
@@ -886,7 +885,7 @@ margin: 15px 0 0 0;
     position: relative;
     z-index: 4;
     float: left;
-    margin-top: 452.5px;
+    margin-top: 310px;
     margin-left: -30px;
     background: url(..//img/Arrow_Left_Pointer.png);
     background-position: 75% 50%;
@@ -1020,13 +1019,28 @@ svg {
 .Main_Menu {
     width: 95px;
     height: 120px;
+    background: url(..//img/Main_Menu.png);
     position: absolute;
     left: 910px;
-    background-size: 98%;
-
+    top: 0px;
+    background-size: 96%;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
     z-index: 100;
+    background-repeat: no-repeat;
+}
+
+.Cont_Main_Menuu {
+  margin: 0 auto;
+  padding: 0 0 0 0;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  height: 119px;
+  left: 28px;
+  width: 1864px;
+  top: 29px;
+  background: url(..//img/PL.Kimra_Turist_Gorizont.jpg);
 }
 
 /*scroll bar*/
