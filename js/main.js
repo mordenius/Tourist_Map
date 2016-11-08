@@ -683,41 +683,41 @@ $('.map').click(function() {
         
         //--------Objects
         
-        let pos = $('#gost_chaika').position();
+        var pos = $('#gost_chaika').position();
         $('#gost_chaika').css("left", (pos.left * 1.0102)).css("top", (pos.top * 1.0108));
-        let pos1 = $('#gost_2_cap').position();
+        var pos1 = $('#gost_2_cap').position();
         $('#gost_2_cap').css("left", (pos1.left * 1.0102)).css("top", (pos1.top * 1.0108));
-        let pos3 = $('#gost_berezka').position();
+        var pos3 = $('#gost_berezka').position();
         $('#gost_berezka').css("left", (pos3.left * 1.0102)).css("top", (pos3.top * 1.0108));
-        let pos4 = $('#g_savma').position();
+        var pos4 = $('#g_savma').position();
         $('#g_savma').css("left", (pos4.left * 1.0102)).css("top", (pos4.top * 1.0108));
-        let pos5 = $('#c_calina').position();
+        var pos5 = $('#c_calina').position();
         $('#c_calina').css("left", (pos5.left * 1.0102)).css("top", (pos5.top * 1.0108));
-        let pos6 = $('#c_stariy_gorod').position();
+        var pos6 = $('#c_stariy_gorod').position();
         $('#c_stariy_gorod').css("left", (pos6.left * 1.0102)).css("top", (pos6.top * 1.0108));
-        let pos7 = $('#c_shemchushina').position();
+        var pos7 = $('#c_shemchushina').position();
         $('#c_shemchushina').css("left", (pos7.left * 1.0102)).css("top", (pos7.top * 1.0108));
-        let pos8 = $('#mag_nix').position();
+        var pos8 = $('#mag_nix').position();
         $('#mag_nix').css("left", (pos8.left * 1.0102)).css("top", (pos8.top * 1.0108));
-        let pos9 = $('#mag_capriz').position();
+        var pos9 = $('#mag_capriz').position();
         $('#mag_capriz').css("left", (pos9.left * 1.0102)).css("top", (pos9.top * 1.0108));
-        let pos10 = $('#ob_mag_obuf').position();
+        var pos10 = $('#ob_mag_obuf').position();
         $('#ob_mag_obuf').css("left", (pos10.left * 1.0102)).css("top", (pos10.top * 1.0108));
-        let pos11 = $('#vozn_cercov').position();
+        var pos11 = $('#vozn_cercov').position();
         $('#vozn_cercov').css("left", (pos11.left * 1.0102)).css("top", (pos11.top * 1.0108));
-        let pos12 = $('#spaso_preob_sobor').position();
+        var pos12 = $('#spaso_preob_sobor').position();
         $('#spaso_preob_sobor').css("left", (pos12.left * 1.0102)).css("top", (pos12.top * 1.0108));
-        let pos13 = $('#gostin_dwor').position();
+        var pos13 = $('#gostin_dwor').position();
         $('#gostin_dwor').css("left", (pos13.left * 1.0102)).css("top", (pos13.top * 1.0108));
-        let pos14 = $('#memor_topoleva').position();
+        var pos14 = $('#memor_topoleva').position();
         $('#memor_topoleva').css("left", (pos14.left * 1.0102)).css("top", (pos14.top * 1.0108));
-        let pos15 = $('#dom_shadneckogo').position();
+        var pos15 = $('#dom_shadneckogo').position();
         $('#dom_shadneckogo').css("left", (pos15.left * 1.0102)).css("top", (pos15.top * 1.0108));
-        let pos16 = $('#dom_serepevih').position();
+        var pos16 = $('#dom_serepevih').position();
         $('#dom_serepevih').css("left", (pos16.left * 1.0102)).css("top", (pos16.top * 1.0108));
-        let pos17 = $('#dom_bratiev_luginih').position();
+        var pos17 = $('#dom_bratiev_luginih').position();
         $('#dom_bratiev_luginih').css("left", (pos17.left * 1.0102)).css("top", (pos17.top * 1.0108));
-        let pos18 = $('#dom_ribgina').position();
+        var pos18 = $('#dom_ribgina').position();
         $('#dom_ribgina').css("left", (pos18.left * 1.0102)).css("top", (pos18.top * 1.0108));
 
         
@@ -752,41 +752,41 @@ $('.map').click(function() {
 
         //---------objects
 
-        let pos = $('#gost_chaika').position();
+        var pos = $('#gost_chaika').position();
         $('#gost_chaika').css("left", (pos.left / 1.0102)).css("top", (pos.top / 1.0108));
-        let pos1 = $('#gost_2_cap').position();
+        var pos1 = $('#gost_2_cap').position();
         $('#gost_2_cap').css("left", (pos1.left / 1.0102)).css("top", (pos1.top / 1.0108));
-        let pos3 = $('#gost_berezka').position();
+        var pos3 = $('#gost_berezka').position();
         $('#gost_berezka').css("left", (pos3.left / 1.0102)).css("top", (pos3.top / 1.0108));
-        let pos4 = $('#g_savma').position();
+        var pos4 = $('#g_savma').position();
         $('#g_savma').css("left", (pos4.left / 1.0102)).css("top", (pos4.top / 1.0108));
-        let pos5 = $('#c_calina').position();
+        var pos5 = $('#c_calina').position();
         $('#c_calina').css("left", (pos5.left / 1.0102)).css("top", (pos5.top / 1.0108));
-        let pos6 = $('#c_stariy_gorod').position();
+        var pos6 = $('#c_stariy_gorod').position();
         $('#c_stariy_gorod').css("left", (pos6.left / 1.0102)).css("top", (pos6.top / 1.0108));
-        let pos7 = $('#c_shemchushina').position();
+        var pos7 = $('#c_shemchushina').position();
         $('#c_shemchushina').css("left", (pos7.left / 1.0102)).css("top", (pos7.top / 1.0108));
-        let pos8 = $('#mag_nix').position();
+        var pos8 = $('#mag_nix').position();
         $('#mag_nix').css("left", (pos8.left / 1.0102)).css("top", (pos8.top / 1.0108));
-        let pos9 = $('#mag_capriz').position();
+        var pos9 = $('#mag_capriz').position();
         $('#mag_capriz').css("left", (pos9.left / 1.0102)).css("top", (pos9.top / 1.0108));
-        let pos10 = $('#ob_mag_obuf').position();
+        var pos10 = $('#ob_mag_obuf').position();
         $('#ob_mag_obuf').css("left", (pos10.left / 1.0102)).css("top", (pos10.top / 1.0108));
-        let pos11 = $('#vozn_cercov').position();
+        var pos11 = $('#vozn_cercov').position();
         $('#vozn_cercov').css("left", (pos11.left / 1.0102)).css("top", (pos11.top / 1.0108));
-        let pos12 = $('#spaso_preob_sobor').position();
+        var pos12 = $('#spaso_preob_sobor').position();
         $('#spaso_preob_sobor').css("left", (pos12.left / 1.0102)).css("top", (pos12.top / 1.0108));
-        let pos13 = $('#gostin_dwor').position();
+        var pos13 = $('#gostin_dwor').position();
         $('#gostin_dwor').css("left", (pos13.left / 1.0102)).css("top", (pos13.top / 1.0108));
-        let pos14 = $('#memor_topoleva').position();
+        var pos14 = $('#memor_topoleva').position();
         $('#memor_topoleva').css("left", (pos14.left / 1.0102)).css("top", (pos14.top / 1.0108));
-        let pos15 = $('#dom_shadneckogo').position();
+        var pos15 = $('#dom_shadneckogo').position();
         $('#dom_shadneckogo').css("left", (pos15.left / 1.0102)).css("top", (pos15.top / 1.0108));
-        let pos16 = $('#dom_serepevih').position();
+        var pos16 = $('#dom_serepevih').position();
         $('#dom_serepevih').css("left", (pos16.left / 1.0102)).css("top", (pos16.top / 1.0108));
-        let pos17 = $('#dom_bratiev_luginih').position();
+        var pos17 = $('#dom_bratiev_luginih').position();
         $('#dom_bratiev_luginih').css("left", (pos17.left / 1.0102)).css("top", (pos17.top / 1.0108));
-        let pos18 = $('#dom_ribgina').position();
+        var pos18 = $('#dom_ribgina').position();
         $('#dom_ribgina').css("left", (pos18.left / 1.0102)).css("top", (pos18.top / 1.0108));
 
 
