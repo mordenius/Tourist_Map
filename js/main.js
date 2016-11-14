@@ -1,7 +1,6 @@
 $(function() {
     // -- data_point 
       // -- data_point 
-    var multitouch = true;
     var Point_Mass = [{
         "point": {
             "id": "gost_chaika",
@@ -356,11 +355,11 @@ $(function() {
             "addres": "",
             "phone": "",
             "maill": "",
-            "map_pos_x":"-1500px",
-            "map_pos_y":"-2379px",
+            "map_pos_x":"-1279px",
+            "map_pos_y":"-1186px",
             "position": {
-                "top": "2500px",
-                "left": "2121px"
+                "top": "1464px",
+                "left": "1771px"
             }
         }
     }, {
@@ -466,41 +465,6 @@ $(function() {
 
     }];
     // -- data_point_end    
-    // -- data_point_end   
-$(window).on("touchstart", function(e) { 
-    //--- event.preventDefault();
-    //--- event.stopPropagation();
-    if(event.targetTouches.length == 2){
-       multitouch = true; 
-    }else{
-       multitouch = false;     
-    }
-    //--console.log(multitouch, "multitouch"); 
-    //--console.log(event.targetTouches.length, "event.targetTouches.length");
-});
-    
-$(window).on("touchmove", function(e) { 
-    //--- event.preventDefault();
-    //--- event.stopPropagation();
-    if(event.targetTouches.length == 2){
-       multitouch = true; 
-    }else{
-       multitouch = false;     
-    }
-    //--console.log(multitouch, "multitouch"); 
-    //--console.log(event.targetTouches.length, "event.targetTouches.length")
-    
-    if(multitouch==false){  
-    }
-    
-}); 
-
-
-
-
-
-
-
     var nam_l = 0;
     // -- create_point_dom
     function create_point_dom() {
@@ -824,12 +788,12 @@ $('.map').click(function() {
     var pinch = new Hammer.Pinch();
     mc.add([pinch]);
     mc.on("pinchin", function(ev) {
-        ev.preventDefault();
-         width_out();
+         //ev.preventDefault();
+         //width_out();
     });
     mc.on("pinchout", function(ev) {
-        ev.preventDefault();
-        width_in();
+        //ev.preventDefault();
+        //width_in();
     });
     mc.on("panmove", function(ev) {
 
@@ -917,13 +881,11 @@ if(point_namber > 5 && ative_point_of_list == "tourist_facilities"){
     });
     //--- Zooom_Button
 
-
     var disable_point = function() {
         $('.swiper-slide').removeClass('activet');
         $('.point').removeClass('active_point');
         $(".point").children('div').children('div').children('button').removeClass('ativeted_point');
     }
-
 
     var map = {
         scroll_map: scroll_funck = function() {
@@ -932,22 +894,16 @@ if(point_namber > 5 && ative_point_of_list == "tourist_facilities"){
         var nowPoint;
         var drag = false;
         $(".box").on('touchstart', function(e) {
-          if(multitouch == false){
              initialPoint = event.changedTouches[0];
-             drag = true; 
-          }
-            
+             drag = true;            
         }).on('touchend', function() {
-          if(multitouch == false){
              finalPoint = event.changedTouches[0];
              $(this).data({
                 startX: 0,
                 startY: 0,
              });
              drag = false;
-           }
         }).on('touchmove', function(e) {
-            if(multitouch == false){
             nowPoint = event.changedTouches[0];
             //  console.log(nowPoint.screenX, nowPoint.screenY);
             e.preventDefault();
@@ -968,8 +924,6 @@ if(point_namber > 5 && ative_point_of_list == "tourist_facilities"){
                     startY: nowPoint.screenY,
                 });
             };
-        }
-            
         });
         },
         start_map_position: start_map_position_funck = function() {

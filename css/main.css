@@ -720,9 +720,9 @@ margin: 15px 0 0 0;
 
  #gost_chaika {
     /* background: url(..//img/Point_Active.png); */
-    top: 1522.5px;
+    top: 1523.5px;
     left: 1836.5px;
-    z-index: 3;
+    z-index: 10;
 }
 
  #gost_2_cap {
@@ -757,7 +757,7 @@ margin: 15px 0 0 0;
     /* background-image: url(..//img/Shoe_Icon.svg); */
     top: 1440.5px;
     left: 1834.5px;
-    z-index: 2;
+    z-index: 3;
 }
 
 #c_shemchushina {
@@ -810,9 +810,9 @@ margin: 15px 0 0 0;
 
 
 #memor_topoleva {
-   top: 2500px;
-   left: 2121px;
-   z-index: 2;
+   top: 1464px;
+   left: 1771px;
+   z-index: 7;
 }
 
 #dom_shadneckogo {
@@ -824,7 +824,7 @@ margin: 15px 0 0 0;
 #dom_serepevih {
    top: 1462px;
    left: 1729px;
-   z-index: 2;
+   z-index: 5;
 }
 
 #dom_bratiev_luginih {
